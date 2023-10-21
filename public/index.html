@@ -1,131 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
     <title>Sang Penyu</title>
-</head>
+  </head>
 
-
-<body>
-    <div class="w-full h-full lg:h-screen bg-no-repeat bg-cover bg-fixed pb-32 lg:pb-0"
-        style="background-image: url(img/background.png);">
-        <!-- Header -->
-        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-            <div class="container mx-auto">
-                <div class="flex items-center justify-between relative">
-                    <div class="px-4">
-                        <a href="#home" class="font-bold text-xl text-white block py-6 ml-5 lg:text-2xl">SANG PENYU
-                        </a>
-                    </div>
-                    <div class="flex items-center px-4">
-                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                            <span class="hamburger-line transition duration-300 ease-in-out "></span>
-                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                        </button>
-
-                        <nav id="nav-menu"
-                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
-                            <ul class="block lg:flex">
-                                <li class="group">
-                                    <a href=""
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Home</a>
-                                </li>
-                                <li class="group">
-                                    <a href=""
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Komunitas</a>
-                                </li>
-                                <li class="group">
-                                    <a href=""
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Informasi</a>
-                                </li>
-                                <li class="group transition-all duration-300 ease-in-out">
-                                    <a href=""
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                                        Kontak
-
-                                    </a>
-
-                                </li>
-                                <li class="group">
-                                    <a href=""
-                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white lg:bg-primary lg:px-5 lg:rounded-full">Donasi</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+  <body>
+    <div
+      class="w-full h-full lg:h-screen bg-no-repeat bg-cover bg-fixed pb-32 lg:pb-0"
+      style="background-image: url(img/background.png)">
+      <!-- Header -->
+      <header
+        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between relative">
+            <div class="px-4">
+              <a
+                href="#home"
+                class="font-bold text-xl text-white block py-6 ml-5 lg:text-2xl"
+                >SANG PENYU
+              </a>
             </div>
-        </header>
-        <!-- End Header -->
+            <div class="flex items-center px-4">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="block absolute right-4 lg:hidden">
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              </button>
 
-
-        <!-- Homepage -->
-        <section id="homepage" class="pt-36  ">
-
-            <div class=" container text-secondary  mx-auto ">
-
-                <div class="flex flex-wrap">
-
-                    <div class="w-full self-center px-4 mb-10 lg:w-1/2">
-                        <img src="img/penyu.png" alt="" class="mx-auto ">
-                    </div>
-                    <div class="w-full self-center px-4 lg:w-1/2">
-                        <div class="mt-3 pb-10 px-5 text-center lg:text-left">
-                            <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl mb-10 justify-center">
-                                MARI LINDUNGI <br>
-                                SATWA PENYU <br>
-                                DENGAN RP 1000
-                            </h1>
-                            <a href=""
-                                class="px-6 py-2 bg-slate-700 rounded-full hover:bg-sky-600 transition duration-200 ease-in-out">
-                                Donasi Sekarang
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a
+                      href=""
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href=""
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+                      >Komunitas</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href=""
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+                      >Informasi</a
+                    >
+                  </li>
+                  <li class="group transition-all duration-300 ease-in-out">
+                    <a
+                      href=""
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                      Kontak
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a
+                      href=""
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white lg:bg-primary lg:px-5 lg:rounded-full"
+                      >Donasi</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </div>
-        </section>
-        <!-- End Homepage -->
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
 
+      <!-- Homepage -->
+      <section id="homepage" class="pt-36">
+        <div class="container text-secondary mx-auto">
+          <div class="flex flex-wrap">
+            <div class="w-full self-center px-4 mb-10 lg:w-1/2">
+              <img src="img/penyu.png" alt="" class="mx-auto" />
+            </div>
+            <div class="w-full self-center px-4 lg:w-1/2">
+              <div class="mt-3 pb-10 px-5 text-center lg:text-left">
+                <h1
+                  class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl mb-10 justify-center">
+                  MARI LINDUNGI <br />
+                  SATWA PENYU <br />
+                  DENGAN RP 1000
+                </h1>
+                <a
+                  href=""
+                  class="px-6 py-4 bg-slate-700 rounded-full hover:bg-sky-600 transition duration-200 ease-in-out">
+                  Donasi Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Homepage -->
     </div>
-    <div class="bg-slate-700 h-screen relative">
 
-        <!-- Komunitas -->
-        <section class="py-20 mx-10 lg:py-32">
-            <div class="container mx-auto">
-                <div class="flex flex-wrap">
-                    <div class="w-full self-center px-5 mb-10  lg:w-1/2 items-center ">
-                        <h2 class="text-secondary font-bold text-xl text-center tracking-wide lg:text-left lg:text-5xl">
-                            SANG PENYU
-                        </h2>
-                        <p class="text-secondary mt-10 text-justify font-extralight">Sang Penyu adalah komunitas
-                            yang
-                            didedikasikan
-                            untuk
-                            melestarikan penyu di Bali. Diinisiasi
-                            secara independen oleh para aktivis dan masyarakat yang penuh dedikasi terhadap konservasi
-                            penyu, Sang Penyu berpusat di Pantai Ketewel, Gianyar, Bali. Bersama-sama, mereka
-                            berkomitmen
-                            untuk menjaga kelestarian penyu dan merangkul cinta terhadap makhluk-makhluk ini dalam upaya
-                            pelestarian.</p>
-                    </div>
-                    <div class="w-full self-center px-5 mb-10  lg:w-1/2 items-center ">
-                    </div>
+    <!-- Komunitas -->
+    <section
+      class="py-20 lg:pt-56 lg:px-16 lg:overflow-hidden w-full bg-slate-700">
+      <div class="relative z-[1] hidden lg:block">
+        <span
+          class="absolute w-[900px] h-[900px] -right-[250px] -top-[200px] opacity-50">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#4AA5C2 "
+              d="M70.1,-25C77.4,-0.4,60.5,29.9,38,44.4C15.5,58.9,-12.7,57.6,-35.8,42.5C-58.9,27.3,-76.9,-1.8,-70.1,-25.7C-63.3,-49.7,-31.6,-68.5,-0.1,-68.5C31.4,-68.4,62.8,-49.5,70.1,-25Z"
+              transform="translate(100 100)" />
+          </svg>
+        </span>
+        <span
+          class="absolute w-[900px] h-[900px] -right-[100px] -top-[150px] opacity-80">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="">
+            <path
+              fill="#4AA5C2"
+              d="M70.1,-25C77.4,-0.4,60.5,29.9,38,44.4C15.5,58.9,-12.7,57.6,-35.8,42.5C-58.9,27.3,-76.9,-1.8,-70.1,-25.7C-63.3,-49.7,-31.6,-68.5,-0.1,-68.5C31.4,-68.4,62.8,-49.5,70.1,-25Z"
+              transform="translate(100 100)" />
+          </svg>
+        </span>
+      </div>
+      <!-- Sejarah Komunitas -->
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full self-center px-5 mb-10 lg:w-1/2 items-center z-[999]">
+            <h1
+              class="text-secondary font-bold text-xl text-center tracking-wide lg:text-left lg:text-5xl">
+              SANG PENYU
+            </h1>
+            <p
+              class="text-secondary mt-10 text-justify font-extralight text-sm lg:text-lg">
+              Sang Penyu adalah komunitas yang didedikasikan untuk melestarikan
+              penyu di Bali. Diinisiasi secara independen oleh para aktivis dan
+              masyarakat yang penuh dedikasi terhadap konservasi penyu, Sang
+              Penyu berpusat di Pantai Ketewel, Gianyar, Bali. Bersama-sama,
+              mereka berkomitmen untuk menjaga kelestarian penyu dan merangkul
+              cinta terhadap makhluk-makhluk ini dalam upaya pelestarian.
+            </p>
+            <span class="p-24 hidden lg:block">
+              <img src="img/image 9.png" alt="" width="400px" />
+            </span>
+          </div>
+          <div class="w-full self-start px-5 mb-10 lg:w-1/2 items-center z-10">
+            <div class="relative">
+              <img
+                src="img/penyu.png"
+                alt=""
+                width="300px"
+                class="lg:absolute top-20 right-28 mx-auto h-72 object-cover rounded-3xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Sejarah Komunitas -->
+
+      <!-- Gallery Pendiri Dan Anggota -->
+      <div class="flex flex-wrap gap-10 mt-32">
+        <div class="container px-10">
+          <div class="flex mx-auto py-10">
+            <h2 class="text-xl md:text-2xl font-bold text-secondary">
+              Pendiri Dan Anggota
+            </h2>
+          </div>
+
+          <div class="container">
+            <div
+              class="sm:flex items-center w-full h-full gap-10 flex-wrap sm:justify-between">
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
                 </div>
-        </section>
-        <!-- End Komunitas -->
-    </div>
+              </div>
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
+                </div>
+              </div>
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
+                </div>
+              </div>
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
+                </div>
+              </div>
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
+                </div>
+              </div>
+              <div
+                class="mb-10 h-full shadow-3xl bg-slate-800 rounded-3xl overflow-hidden sm:w-64 md:w-80 lg:w-96">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <div class="py-5 px-10">
+                  <h3 class="text-xl font-medium text-secondary">Ms Unix</h3>
+                  <p class="font-extralight text-secondary">Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto h-full w-full pt-36">
+        <h2 class="font-bold text-3xl text-secondary text-center">Lokasi</h2>
+        <div class="w-full h-full py-10">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31555.691422619406!2d115.27718401800986!3d-8.647588275806996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2400730202987%3A0x4499df2d3d450c21!2sPantai%20Lembeng!5e0!3m2!1sid!2sid!4v1697776247209!5m2!1sid!2sid"
+            width="800"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="mx-auto rounded-2xl w-[80%] h-[60vh] lg:w-1/2"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="py-8 text-center text-secondary">
+            Jl. Pantai Gumicik, Ketewel, Kec. Sukawati, Kabupaten Gianyar, Bali
+            80582
+          </p>
+        </div>
+      </div>
+      <!-- End Gallery Pendiri Dan Anggota -->
+    </section>
+
+    <!-- End Komunitas -->
+
+    <section
+      class="w-full h-full pt-36 relative z-30 bg-slate-700 overflow-hidden">
+      <div class="relative -z-10">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute sm:-top-[150px] md:-top-[300px] lg:-top-[450px] lg:-right-[100px]">
+          <path
+            fill="#BBEFF7"
+            d="M57.9,-50.2C73.4,-42.3,83.3,-21.2,81,-2.3C78.7,16.6,64.3,33.2,48.7,49C33.2,64.8,16.6,79.8,2.5,77.3C-11.6,74.8,-23.2,54.8,-34.9,39C-46.5,23.2,-58.2,11.6,-63.6,-5.4C-69,-22.4,-68.2,-44.9,-56.5,-52.8C-44.9,-60.6,-22.4,-54,-0.6,-53.4C21.2,-52.7,42.3,-58.1,57.9,-50.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </div>
+      <div class="container lg:block z-10 mx-auto">
+        <div class="lg:flex block w-full h-full">
+          <div class="lg:w-[40%] justify-center m-auto items-center">
+            <img
+              src="img/penyu-informasi.png"
+              width="500px"
+              class="items-center mx-auto" />
+          </div>
+          <div class="lg:w-[60%] px-10">
+            <div class="lg:px-10 lg:mr-20">
+              <h1 class="font-bold text-xl text-white lg:text-slate-900">
+                Penyu itu apa sih?
+              </h1>
+              <p
+                class="mt-10 text-justify text-white lg:text-slate-900 font-light">
+                Penyu merupakan reptil laut yang dikenal dengan cangkang
+                kerasnya, menduduki peran krusial dalam ekosistem laut dan harus
+                dilindungi dengan sungguh-sungguh. Mereka tidak hanya
+                berkontribusi pada keseimbangan ekosistem laut dengan menjadi
+                pemakan alga dan pengontrol populasi hewan laut kecil, tetapi
+                juga memiliki nilai ekologis yang tinggi melalui telur-telur
+                mereka yang menjadi sumber makanan bagi hewan pemangsa di
+                pesisir. Ancaman dari aktivitas manusia, seperti perburuan
+                ilegal, perusakan habitat, dan polusi laut, telah membuat penyu
+                semakin rentan. Perlindungan penyu bukan hanya tentang
+                pelestarian satu spesies, tetapi juga tentang mendukung
+                keanekaragaman hayati laut, mempertahankan ekosistem, dan
+                memberikan peluang ekowisata serta pendidikan bagi masyarakat
+                lokal. Dengan kesadaran akan pentingnya peran penyu dalam
+                ekosistem, upaya konservasi menjadi esensial untuk memastikan
+                kelangsungan hidup mereka dan menjaga keberlanjutan ekosistem
+                laut global.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container h-screen z-30 bg-slate-700">
+        <h1>wjahdjawdhja</h1>
+      </div>
+    </section>
+
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
