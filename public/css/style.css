@@ -698,10 +698,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -714,12 +710,21 @@ video {
   width: 100%;
 }
 
-.w-\[50\%\] {
-  width: 50%;
+.w-screen {
+  width: 100vw;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-\[250px\] {
   max-width: 250px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .origin-bottom-left {
@@ -732,6 +737,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -750,8 +759,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .self-start {
@@ -764,6 +781,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -805,11 +826,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -849,12 +865,12 @@ video {
      object-fit: cover;
 }
 
-.p-24 {
-  padding: 6rem;
+.p-20 {
+  padding: 5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-24 {
+  padding: 6rem;
 }
 
 .px-10 {
@@ -922,14 +938,6 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
-}
-
-.pt-96 {
-  padding-top: 24rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1109,10 +1117,6 @@ body {
     width: 16rem;
   }
 
-  .sm\:justify-between {
-    justify-content: space-between;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1156,18 +1160,6 @@ body {
     top: -450px;
   }
 
-  .lg\:-top-\[400px\] {
-    top: -400px;
-  }
-
-  .lg\:-right-\[50px\] {
-    right: -50px;
-  }
-
-  .lg\:-right-\[30px\] {
-    right: -30px;
-  }
-
   .lg\:mr-20 {
     margin-right: 5rem;
   }
@@ -1204,16 +1196,16 @@ body {
     width: 60%;
   }
 
-  .lg\:w-\[80vh\] {
-    width: 80vh;
-  }
-
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
-
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .lg\:overflow-hidden {
