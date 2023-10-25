@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,12 +18,12 @@
       style="background-image: url(img/background.png)">
       <!-- Header -->
       <header
-        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-[999]">
         <div class="container mx-auto">
           <div class="flex items-center justify-between relative">
             <div class="px-4">
               <a
-                href="#home"
+                href="#homepage"
                 class="font-bold text-xl text-white block py-6 ml-5 lg:text-2xl"
                 >SANG PENYU
               </a>
@@ -48,28 +48,28 @@
                 <ul class="block lg:flex">
                   <li class="group">
                     <a
-                      href="#home"
+                      href="#homepage"
                       class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                       >Home</a
                     >
                   </li>
                   <li class="group">
                     <a
-                      href=""
+                      href="#komunitas"
                       class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                       >Komunitas</a
                     >
                   </li>
                   <li class="group">
                     <a
-                      href=""
+                      href="#informasi"
                       class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
                       >Informasi</a
                     >
                   </li>
                   <li class="group transition-all duration-300 ease-in-out">
                     <a
-                      href=""
+                      href="#kontak"
                       class="text-base text-dark py-2 mx-8 flex group-hover:text-slate-400 lg:text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                       Kontak
                     </a>
@@ -90,7 +90,7 @@
       <!-- End Header -->
 
       <!-- Homepage -->
-      <section id="home" class="pt-36">
+      <section id="homepage" class="pt-36">
         <div class="container text-secondary mx-auto">
           <div class="flex flex-wrap">
             <div class="w-full self-center px-4 mb-10 lg:w-1/2">
@@ -119,6 +119,7 @@
 
     <!-- Komunitas -->
     <section
+      id="komunitas"
       class="py-20 lg:pt-56 lg:px-16 lg:overflow-hidden w-full bg-slate-700">
       <div class="relative z-[1] hidden lg:block">
         <span
@@ -269,10 +270,11 @@
       </div>
       <!-- End Gallery Pendiri Dan Anggota -->
     </section>
-
     <!-- End Komunitas -->
 
+    <!-- Informasi -->
     <section
+      id="informasi"
       class="w-full h-full pt-36 relative z-30 bg-slate-700 overflow-hidden">
       <div class="relative -z-10">
         <svg
@@ -299,7 +301,7 @@
                 Penyu itu apa sih?
               </h1>
               <p
-                class="mt-10 text-justify text-white lg:text-slate-900 font-light">
+                class="mt-10 text-justify text-white lg:text-slate-900 font-light leading-8">
                 Penyu merupakan reptil laut yang dikenal dengan cangkang
                 kerasnya, menduduki peran krusial dalam ekosistem laut dan harus
                 dilindungi dengan sungguh-sungguh. Mereka tidak hanya
@@ -323,6 +325,7 @@
         </div>
       </div>
       <div class="lg:py-56"></div>
+
       <div class="container mx-auto mt-99 p-20 h-full z-30 bg-slate-700">
         <h1 class="text-2xl text-secondary font-bold">Jenis - Jenis Penyu</h1>
         <hr class="bg-secondary my-6 w-full lg:w-[40%]" />
@@ -330,16 +333,14 @@
           <div
             class="penyu lg:flex gap-20 justify-center items-center lg:flex-row-reverse block">
             <div class="img">
-              <img
-                class="rounded-2xl lg:w-[50%] mx-auto"
-                src="img/green-sea-turtle-swimming-726107e6cb24f94eb96bf875ffbf43f3-88be1f64b87d55c9b375413fb3c22b6a.jpg"
-                alt="" />
+              <img class="rounded-2xl lg:w-[60%] mx-auto"
+              src="img/list-penyu/penyu-hijau.jpg"" alt="" />
             </div>
             <div class="text lg:w-[50%] py-10">
               <h1 class="text-xl font-semibold text-secondary py-10">
                 Penyu Hijau
               </h1>
-              <p class="text-secondary">
+              <p class="text-secondary font-light text-justify leading-10">
                 Penyu hijau adalah salah satu spesies penyu yang terbesar dan
                 dapat ditemui di perairan tropis dan subtropis di seluruh dunia.
                 Makanan utamanya adalah rumput laut dan alga.
@@ -347,28 +348,156 @@
             </div>
           </div>
           <div class="garis hidden lg:flex justify-center items-center">
-            <img src="img/Vector 8.svg" alt="" />
+            <img src="img/garis-1.svg" alt="" />
           </div>
           <div
             class="penyu lg:flex gap-20 justify-center items-center lg:flex-row block">
             <div class="img">
               <img
-                class="rounded-2xl"
-                src="img/green-sea-turtle-swimming-726107e6cb24f94eb96bf875ffbf43f3-88be1f64b87d55c9b375413fb3c22b6a.jpg"
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-sisik.png"
                 alt="" />
             </div>
-            <div class="text">
-              <h1 class="text-xl">Penyu Hijau</h1>
-              <p>
-                Penyu hijau adalah salah satu spesies penyu yang terbesar dan
-                dapat ditemui di perairan tropis dan subtropis di seluruh dunia.
-                Makanan utamanya adalah rumput laut dan alga.
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Sisik
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                Penyu sisik memiliki cangkang yang tebal dan besar. Mereka dapat
+                ditemukan di berbagai perairan, termasuk perairan hangat dan
+                dingin, dan memakan berbagai jenis makanan laut.
+              </p>
+            </div>
+          </div>
+          <div class="garis hidden lg:flex justify-center items-center">
+            <img src="img/garis-2.svg" alt="" />
+          </div>
+          <div
+            class="penyu lg:flex gap-20 justify-center items-center lg:flex-row-reverse block py-10">
+            <div class="img">
+              <img
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-belimbing.png"
+                alt="" />
+            </div>
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Belimbing
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                Penyu ini dikenal karena cangkangnya yang berbentuk seperti
+                "belimbing" dan memiliki sisik-sisik berbentuk seperti paruh.
+                Mereka biasanya hidup di perairan hangat dan terumbu karang,
+                memakan spons laut dan invertebrata lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="garis hidden lg:flex justify-center items-center">
+            <img src="img/garis-1.svg" alt="" />
+          </div>
+          <div
+            class="penyu lg:flex gap-20 justify-center items-center lg:flex-row block">
+            <div class="img">
+              <img
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-kemp's-ridley.png"
+                alt="" />
+            </div>
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Kemp's Ridley
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                Penyu ini adalah salah satu spesies yang paling langka dan
+                kecil. Mereka biasanya ditemukan di perairan Amerika Utara dan
+                dapat melakukan migrasi jarak jauh.
+              </p>
+            </div>
+          </div>
+          <div class="garis hidden lg:flex justify-center items-center">
+            <img src="img/garis-2.svg" alt="" />
+          </div>
+          <div
+            class="penyu lg:flex gap-20 justify-center items-center lg:flex-row-reverse block py-10">
+            <div class="img">
+              <img
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-pipih.png"
+                alt="" />
+            </div>
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Pipih
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                Penyu pipih hanya ditemukan di perairan sekitar Australia dan
+                Papua Nugini. Mereka memiliki cangkang yang lebih datar
+                dibandingkan dengan beberapa spesies penyu lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="garis hidden lg:flex justify-center items-center">
+            <img src="img/garis-1.svg" alt="" />
+          </div>
+          <div
+            class="penyu lg:flex gap-20 justify-center items-center lg:flex-row block">
+            <div class="img">
+              <img
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-lekang.png"
+                alt="" />
+            </div>
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Lekang
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                spesies penyu yang hidup di perairan tropis dan subtropis yang
+                berperairan dangkal. Penyu lekang ditemukan bertelur di Samudra
+                Hindia, Samudra Pasifik, dan pantai di pulau-pulau besar.
+              </p>
+            </div>
+          </div>
+          <div class="garis hidden lg:flex justify-center items-center">
+            <img src="img/garis-2.svg" alt="" />
+          </div>
+          <div
+            class="penyu lg:flex gap-20 justify-center items-center lg:flex-row-reverse block py-10">
+            <div class="img">
+              <img
+                class="rounded-2xl lg:w-[60%] mx-auto"
+                src="img/list-penyu/penyu-pipih.png"
+                alt="" />
+            </div>
+            <div class="text lg:w-[50%] py-10">
+              <h1 class="text-xl font-semibold text-secondary py-10">
+                Penyu Tempayan
+              </h1>
+              <p class="text-secondary font-light text-justify leading-10">
+                salah satu jenis penyu yang penyebarannya sangat luas meliputi
+                Samudera Hindia, Samudera Pasifik, Samudera Mediterania dan
+                Samudera Atlantik.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End Informasi -->
+
+    <!-- Contact -->
+    <section class="w-full h-screen relative overflow-hidden">
+      <div class="container relative">
+        <div
+          class="background absolute h-screen w-[70%] bg-slate-700 opacity-[90%]"></div>
+
+        <div
+          class="card bg-slate-700 h-56 w-56 absolute translate-y-[40vh] right-[23%]">
+          wadjhawjdha
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
 
     <script src="js/script.js"></script>
   </body>
